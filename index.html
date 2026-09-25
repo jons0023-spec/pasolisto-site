@@ -7,44 +7,36 @@
 <meta name="description" content="PasoListo convierte procedimientos web en guías paso a paso con capturas, edición, indicadores de clic y exportación a Word.">
 <style>
 :root{--bg:#f6f8f7;--card:#fff;--ink:#17342f;--muted:#61736f;--accent:#146b58;--line:#dce7e2}
-*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
-.wrap{max-width:1080px;margin:auto;padding:0 24px}
-nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
-.brand{display:flex;gap:12px;align-items:center;font-weight:800}.logo{width:38px;height:38px;border-radius:10px;background:var(--accent);color:white;display:grid;place-items:center;font-size:22px}
-nav a{color:var(--ink);text-decoration:none;font-size:14px}
-.hero{padding:72px 0 48px;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:1080px;margin:auto;padding:0 24px}nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.brand{display:flex;gap:12px;align-items:center;font-weight:800}.logo{width:38px;height:38px;border-radius:10px;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:22px}
+nav a{color:var(--ink);text-decoration:none;font-size:14px}.hero{padding:72px 0 48px;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
 .badge{display:inline-block;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:13px}
-h1{font-size:58px;line-height:1.02;letter-spacing:-2.5px;margin:18px 0 18px}
-.lead{font-size:20px;line-height:1.6;color:var(--muted);max-width:720px}
-.cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
-.btn{padding:13px 18px;border-radius:10px;text-decoration:none;font-weight:700}.primary{background:var(--accent);color:white}.secondary{border:1px solid var(--line);color:var(--ink);background:#fff}
+h1{font-size:58px;line-height:1.02;letter-spacing:-2.5px;margin:18px 0}.lead{font-size:20px;line-height:1.6;color:var(--muted);max-width:720px}
+.cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{padding:13px 18px;border-radius:10px;text-decoration:none;font-weight:700}.primary{background:var(--accent);color:#fff}.secondary{border:1px solid var(--line);color:var(--ink);background:#fff}
 .mock{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 20px 60px rgba(22,72,60,.10)}
-.mock-top{display:flex;gap:8px;margin-bottom:16px}.dot{width:9px;height:9px;border-radius:99px;background:#d8dfdc}
-.screen{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fbfcfb}
-.screenbar{padding:10px 12px;background:#eef5f2;font-size:12px;color:var(--muted)}
-.area{padding:18px}.step{display:flex;gap:10px;margin:10px 0}.num{width:28px;height:28px;border-radius:8px;background:#e4f2ed;display:grid;place-items:center;font-weight:800;color:var(--accent)}
-.clickdemo{margin-top:18px;border:1px solid var(--line);height:170px;border-radius:10px;display:grid;place-items:center;position:relative;background:white}
-.clickbtn{padding:9px 14px;border-radius:7px;background:#1992b1;color:white;font-weight:700;font-size:12px}
-.ring{position:absolute;width:36px;height:36px;border:3px solid #e53e3e;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
-section{padding:58px 0}.title{font-size:36px;margin:0 0 12px}.sub{color:var(--muted);font-size:17px;line-height:1.6}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}.card h3{margin:0 0 10px}.card p{margin:0;color:var(--muted);line-height:1.55}
+.mock-top{display:flex;gap:8px;margin-bottom:16px}.dot{width:9px;height:9px;border-radius:99px;background:#d8dfdc}.screen{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fbfcfb}
+.screenbar{padding:10px 12px;background:#eef5f2;font-size:12px;color:var(--muted)}.area{padding:18px}.step{display:flex;gap:10px;margin:10px 0}.num{width:28px;height:28px;border-radius:8px;background:#e4f2ed;display:grid;place-items:center;font-weight:800;color:var(--accent)}
+.clickdemo{margin-top:18px;border:1px solid var(--line);height:170px;border-radius:10px;display:grid;place-items:center;position:relative;background:#fff}.clickbtn{padding:9px 14px;border-radius:7px;background:#1992b1;color:#fff;font-weight:700;font-size:12px}.ring{position:absolute;width:36px;height:36px;border:3px solid #e53e3e;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
+section{padding:58px 0}.title{font-size:36px;margin:0 0 12px}.sub{color:var(--muted);font-size:17px;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}.card h3{margin:0 0 10px}.card p{margin:0;color:var(--muted);line-height:1.55}
 .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}.flow div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}.flow strong{display:block;margin-bottom:7px}
+.price{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;margin-top:28px;max-width:560px}.price strong{font-size:26px}.price p{color:var(--muted);line-height:1.6}
 .notice{background:#eaf4f0;border:1px solid #cfe2db;padding:20px;border-radius:14px;line-height:1.6}
-footer{padding:35px 0 45px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-footer a{color:var(--ink)}
+footer{padding:35px 0 45px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:var(--ink)}
 @media(max-width:800px){.hero{grid-template-columns:1fr;gap:30px;padding-top:44px}h1{font-size:43px}.grid,.flow{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<nav><div class="brand"><div class="logo">P</div>PasoListo</div><div><a href="#producto">Producto</a> &nbsp; <a href="privacy.html">Privacidad</a></div></nav>
+<nav><div class="brand"><div class="logo">P</div>PasoListo</div><div><a href="#producto">Producto</a> &nbsp; <a href="#licencia">Licencia</a> &nbsp; <a href="privacy.html">Privacidad</a></div></nav>
 
 <main>
 <section class="hero">
 <div>
-<span class="badge">Beta privada · Extensión para Chrome</span>
+<span class="badge">Extensión de productividad para Chrome</span>
 <h1>De tus clics a un manual editable.</h1>
-<p class="lead">PasoListo captura un procedimiento que realizas en una página web y lo transforma en una guía paso a paso con capturas, textos editables e indicadores visuales.</p>
+<p class="lead">PasoListo convierte procedimientos realizados en páginas web en guías paso a paso con capturas, textos editables e indicadores visuales.</p>
 <div class="cta"><a class="btn primary" href="#producto">Ver cómo funciona</a><a class="btn secondary" href="privacy.html">Política de privacidad</a></div>
 </div>
 <div class="mock" aria-label="Vista ilustrativa de PasoListo">
@@ -53,13 +45,12 @@ footer a{color:var(--ink)}
 <div class="step"><div class="num">01</div><div><strong>Abre la pantalla inicial</strong><br><small>Comprueba que estás en la pantalla correcta.</small></div></div>
 <div class="step"><div class="num">02</div><div><strong>Pulsa «Add Element»</strong><br><small>La captura se actualiza tras la acción.</small></div></div>
 <div class="clickdemo"><div class="clickbtn">Add Element</div><div class="ring"></div></div>
-</div></div>
-</div>
+</div></div></div>
 </section>
 
 <section id="producto">
 <h2 class="title">Un flujo simple</h2>
-<p class="sub">La beta está diseñada para documentar procedimientos realizados en páginas web sin convertir cada manual en un trabajo manual desde cero.</p>
+<p class="sub">Documenta procedimientos web sin tener que construir cada manual desde cero.</p>
 <div class="flow">
 <div><strong>1. Inicia</strong>Autoriza la captura en la pestaña que quieres documentar.</div>
 <div><strong>2. Realiza</strong>Haz el procedimiento normalmente. PasoListo registra los pasos.</div>
@@ -69,7 +60,7 @@ footer a{color:var(--ink)}
 </section>
 
 <section>
-<h2 class="title">Funciones disponibles en la beta</h2>
+<h2 class="title">Funciones</h2>
 <div class="grid">
 <div class="card"><h3>Captura paso a paso</h3><p>Registra la vista visible tras las acciones realizadas en la pestaña autorizada.</p></div>
 <div class="card"><h3>Indicador de clic</h3><p>Marca visualmente dónde se realizó el clic para que el procedimiento sea más fácil de seguir.</p></div>
@@ -80,9 +71,13 @@ footer a{color:var(--ink)}
 </div>
 </section>
 
-<section>
-<div class="notice"><strong>Estado actual:</strong> PasoListo se encuentra en beta privada y todavía no está a la venta. La versión comercial y el sistema de licencias están en preparación.</div>
+<section id="licencia">
+<h2 class="title">Licencia Pro</h2>
+<p class="sub">PasoListo se comercializa como software digital mediante una licencia de pago único. La compra y la activación se gestionan mediante un proveedor externo de pagos y licencias.</p>
+<div class="price"><strong>Pago único</strong><p>La licencia Pro desbloquea las funciones comerciales y de exportación avanzada. El checkout se habilita a través del proveedor de pagos.</p></div>
 </section>
+
+<section><div class="notice"><strong>Privacidad por diseño:</strong> los borradores de manuales y sus capturas se almacenan localmente en el perfil del navegador. Revisa siempre el contenido antes de compartirlo.</div></section>
 </main>
 
 <footer><span>© 2026 PasoListo</span><span><a href="privacy.html">Privacidad</a></span></footer>
